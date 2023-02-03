@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给网站设置域名</title>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">Home</a>
+    </nav>
+    <article>
+        <h1>给网站设置域名</h1>
+        <p>主要用到DNS解析服务，涉及的实体包括域名提供商，DNS服务器提供商，网站托管服务器的IP。</p>
+        <p>域名提供商负责向ICNNA缴纳域名管理费同时也会提供DNS解析服务器</p>
+        <p>如果不满意域名提供商的DNS解析服务器，可以选择其他免费的DNS服务器提供商</p>
+        <p>在DNS服务器上添加域名和网站托管服务器IP关联的记录</p>
+        <ul>
+            <li>A记录表示网站服务器IP直接与域名关联</li>
+            <li>CNAME表示域名与域名之间的关联</li>
+        </ul>
+        <i>网站托管服务器一般会有中间层（多使用Nginx实现），监听80端口，再转发到其它主机的非80端口的http服务，也就是端口转发（反向代理）。
+            使用的表现效果是一个公网的静态IP可以绑定多个域名在80端口</i>
+    </article>
+</body>
+</html>
