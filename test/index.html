@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <script>
+        var xhr = new XMLHttpRequest(); // IE8/9需用window.XDomainRequest兼容
+
+        // 前端设置是否带cookie
+        xhr.withCredentials = true;
+
+        xhr.open('get', 'https://qqlykm.cn/api/joke?key=W9u1KAzBomN5cP0BtPZd6gpRt7', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send();
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                console.log(xhr.responseText)
+            }
+        };   
+    </script>
+</body>
+
+</html>
