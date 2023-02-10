@@ -10,20 +10,20 @@
 
 <body>
     <script>
-        var xhr = new XMLHttpRequest(); // IE8/9需用window.XDomainRequest兼容
+        // var xhr = new XMLHttpRequest(); // IE8/9需用window.XDomainRequest兼容
 
-        // 前端设置是否带cookie
-        xhr.withCredentials = true;
+        // // 前端设置是否带cookie
+        // xhr.withCredentials = true;
 
-        xhr.open('get', 'https://qqlykm.cn/api/joke?key=W9u1KAzBomN5cP0BtPZd6gpRt7', true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send();
+        // xhr.open('get', 'https://qqlykm.cn/api/joke?key=W9u1KAzBomN5cP0BtPZd6gpRt7', true);
+        // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        // xhr.send();
 
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                console.log(xhr.responseText)
-            }
-        };   
+        // xhr.onreadystatechange = function () {
+        //     if (xhr.readyState == 4 && xhr.status == 200) {
+        //         console.log(xhr.responseText)
+        //     }
+        // };   
     </script>
 </body>
 
