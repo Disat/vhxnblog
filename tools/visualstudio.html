@@ -23,6 +23,12 @@
                 --{Release}
         </pre>
         <h3>还不清楚寄存器窗口中，“有效地址”指的是什么和其作用</h3>
+        <h3>How to figure out the linker is used in visual studio?</h3>
+        <a href="https://developercommunity.visualstudio.com/t/in-the-pre-link-step-how-can-i-obtain-a-list-of-ob/240048">mdsn community</a>
+        <p>There isn't a list that contain the obj files that the linker will use.</p>
+        <p>But there are two ways</p>
+        <p>1.You can try to pass exe to dumpbin to see the symbols that are included in the obj files that the linker uses. And collect the obj files by compare the symbols yourself.</p>
+        <p>2.Or you can pass -all option to dumpbin to see the detailed parse log, and collect the obj files by compare the symbols yourself.</p>
     <article>
 </body>
 </html>
